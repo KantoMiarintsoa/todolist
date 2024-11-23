@@ -1,0 +1,159 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Conteneur principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Contenu principal */
+.main-content {
+    width: 75%;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 20%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; /* Organisation verticale */
+    align-items: center; /* Centrer horizontalement */
+}
+
+.add-task-btn {
+    margin-bottom: 20px; /* Ajouter de l'espace sous le bouton */
+    align-self: stretch; /* Faire occuper toute la largeur de la sidebar */
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow */
+}
+
+.add-task-btn:hover {
+    background-color: #218838;
+}
+
+/* Conteneur du tableau */
+.table-container {
+    margin: 20px auto; /* Centrer horizontalement */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90%; /* Limite la largeur */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Shadow pour le conteneur */
+}
+
+/* Tableau */
+.task-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Ajout d'ombre */
+}
+
+.task-table th, .task-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.task-table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.task-row {
+    transition: background-color 0.3s;
+}
+
+.task-row:hover {
+    background-color: #f9f9f9;
+}
+
+/* Boutons du tableau */
+.edit-btn, .delete-btn {
+    padding: 8px 12px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #e0a800;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}   
+
+
+/* Sidebar top styles */
+.sidebar-top {
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sidebar-top .task-count {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.sidebar-top .filter-sort {
+    display: flex;
+    gap: 20px;
+}
+
+.filter-status,
+.sort-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-status select,
+.sort-btn {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sort-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.sort-btn:hover {
+    background-color: #0056b3;
+}
